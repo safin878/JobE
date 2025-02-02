@@ -1,0 +1,7 @@
+.custom-line3 {
+  width: 1px; /* Thin vertical line */
+  height: 20px; /* Adjust height as needed */
+  background-color: #ffffff; /* White line, adjust color */
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,48 @@
+.back {
+  background-image: url(" https://i.postimg.cc/WzWYCv0G/Screenshot-2025-02-02-115529.png");
+  background-repeat: no-repeat;
+}
+
+/* .clip-right-angle {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.clip-left-angle {
+  clip-path: polygon(50% 0, 100% 0, 100% 65%, 0 100%);
+} */
+
+/* Default clip-path for larger screens (lg and above) */
+.clip-parent {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.clip-image {
+  clip-path: polygon(50% 0, 100% 0, 100% 65%, 0 100%);
+}
+
+/* Clip-path for small screens (sm) */
+.clip-parent-sm {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+}
+
+.clip-image-sm {
+  clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
+}
+
+/* Clip-path for medium screens (md) */
+.clip-parent-md {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+}
+
+.clip-image-md {
+  clip-path: polygon(0 15%, 100% 15%, 100% 100%, 0 100%);
+}
+
+/* Clip-path for large screens (lg and above) */
+.clip-parent-lg {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.clip-image-lg {
+  clip-path: polygon(50% 0, 100% 0, 100% 65%, 0 100%);
+}
