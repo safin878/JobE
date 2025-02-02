@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdLanguage } from "react-icons/md";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
         } ${
           isAtTop
             ? "lg:bg-transparent" // Transparent background when at the top
-            : "lg:bg-base-100 shadow-2xl" // Base background with shadow when scrolled down
+            : "lg:bg-white shadow-2xl" // Base background with shadow when scrolled down
         }
         lg:bg-transparent lg:shadow-none bg-blue-400`}
       >
@@ -129,8 +130,8 @@ const Navbar = () => {
               ></span>
             </a>
 
-            <div className="relative">
-              <div className="flex items-center bg-white text-blue-500 px-4 py-2 rounded-md border border-gray-300">
+            <div className="relative ">
+              <div className="flex items-center bg-white text-blue-500 px-4 py-2 rounded-md border border-gray-300  ">
                 <MdLanguage className="mr-2 text-xl" /> {/* Language Icon */}
                 <select
                   value={selectedLanguage}
@@ -146,13 +147,15 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Contact Button */}
           <button
-            className={`hidden lg:block px-4 py-2 rounded-md ${
-              isAtTop ? "bg-white text-blue-500" : "bg-blue-500 text-white"
-            }`}
+            className={`${
+              isAtTop ? "bg-transparent border-2 " : "bg-[#ff8d58]"
+            }  text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-orange-600 transition duration-300 flex justify-center items-center gap-2`}
           >
-            Contact
+            <span>Contact Us</span>
+            <span>
+              <IoIosArrowForward />
+            </span>
           </button>
 
           {/* Mobile Menu Button */}
